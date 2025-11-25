@@ -3,6 +3,11 @@
 Simple FAST vs SLOW comparison - All demos in one run!
 """
 
+import sys
+from pathlib import Path
+# Add parent directory to path so examples can be run directly
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import benchmark_ips as bm
 from collections import Counter
 
