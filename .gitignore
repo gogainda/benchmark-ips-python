@@ -1,0 +1,21 @@
+log
+tmp
+pkg
+doc
+Gemfile.lock
+vendor
+
+# Python port additions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.coverage
+htmlcov/
+.tox/
+.venv/
+venv/

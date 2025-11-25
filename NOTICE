@@ -1,0 +1,25 @@
+benchmark-ips Python Port
+==========================
+
+This is a Python translation of the Ruby benchmark-ips gem.
+
+Original Work:
+  benchmark-ips (Ruby)
+  Copyright (c) 2015 Evan Phoenix
+  https://github.com/evanphx/benchmark-ips
+  Licensed under MIT License
+
+Python Port:
+  benchmark-ips (Python)
+  Copyright (c) 2025 Python Port Contributors
+  Licensed under MIT License (same as original)
+
+This derivative work maintains the MIT License of the original
+to ensure maximum compatibility and freedom of use.
+
+The Python port was created with permission granted by the MIT
+License, which allows modification and distribution of derivative
+works under the same license terms.
+
+For the full license text, see LICENSE_PYTHON file.
+For credits and acknowledgments, see CREDITS.md file.

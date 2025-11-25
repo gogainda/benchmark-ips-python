@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benchmark-ips"
+dynamic = ["version"]
+description = "Iterations per second benchmarking for Python"
+readme = "README_PYTHON.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Python port by Claude"}
+]
+keywords = ["benchmark", "benchmarking", "performance", "testing", "ips"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Benchmark",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/evanphx/benchmark-ips"
+Documentation = "https://github.com/evanphx/benchmark-ips"
+Repository = "https://github.com/evanphx/benchmark-ips"
+"Bug Tracker" = "https://github.com/evanphx/benchmark-ips/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["benchmark_ips"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
