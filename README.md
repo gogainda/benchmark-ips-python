@@ -8,6 +8,8 @@
 
 A Python port of the Ruby [benchmark-ips](https://github.com/evanphx/benchmark-ips) gem by Evan Phoenix.
 
+**Python Port:** Igor Goncharov <igor@igorstechnoclub.com>
+
 ## Description
 
 An iterations per second enhancement for benchmarking. For short snippets of code, ips automatically figures out how many times to run the code to get interesting data. No more guessing at random iteration counts!
