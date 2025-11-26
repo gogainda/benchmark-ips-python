@@ -56,7 +56,7 @@ Detailed slow vs fast code demonstrations with explanations
 python3 examples/slow_vs_fast_demo.py
 ```
 
-## Python Idioms Benchmark
+## Performance Benchmarks
 
 ### `python_idioms_benchmark.py` ⭐
 Comprehensive benchmark comparing Python idioms (inspired by fast-ruby benchmarks):
@@ -82,6 +82,35 @@ python3 examples/python_idioms_benchmark.py
 - Generator expressions are 3.45x faster than filter() for first-match
 - Direct attribute access and getattr() have similar performance
 - `dict | dict` (Python 3.9+) is fastest for dict merging
+
+### `advanced_performance.py` 🚀
+Deep dive into algorithmic differences and C-level optimizations:
+
+**🏆 Dramatic Winners (Algorithmic):**
+- **Set intersection**: 153x faster than list comprehension (69.9k vs 458 i/s)
+- **itertools.chain()**: 6x faster than sum(lists, []) (66.4k vs 11.1k i/s)
+- **str.split(',', 1)**: 7.16x faster than full split (3.5M vs 490k i/s)
+
+**🚀 Significant Differences (C-Level):**
+- **list.extend()**: 8.35x faster than loop with append (2.78M vs 333k i/s)
+- **Chained replace**: 3.84x FASTER than str.translate() (surprising result!)
+- Deque vs list for pop(0): 2.39x SLOWER (use for popleft() instead)
+
+**🛠 Minor Optimizations:**
+- **math.sqrt()**: 1.38x faster than ** 0.5 (162k vs 118k i/s)
+- **Set operations**: Union operators equivalent (same-ish)
+- **__slots__**: Memory benefit (60% reduction), speed same-ish
+- Global vs local caching: Results vary (1.11x either way)
+
+```bash
+python3 examples/advanced_performance.py
+```
+
+**Key insights:**
+- Use the right data structure (deque for queues, sets for membership)
+- itertools is highly optimized for iteration patterns
+- Caching method lookups in local variables helps in tight loops
+- __slots__ is for memory savings, not speed
 
 ## Starter Template
 
