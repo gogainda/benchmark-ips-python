@@ -13,7 +13,7 @@ The original Ruby implementation has been invaluable to the Ruby community for p
 ## Python Port
 
 **benchmark-ips** (Python port)
-- **Author:** Igor Goncharov <igor@igorstechnoclub.com>
+- **Author:** Igor <igor@igorstechnoclub.com>
 - **Port Date:** November 2025
 - **Repository:** https://github.com/gogainda/benchmark-ips-python
 - **License:** MIT License (maintaining compatibility with original)

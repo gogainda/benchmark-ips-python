@@ -8,7 +8,7 @@
 
 A Python port of the Ruby [benchmark-ips](https://github.com/evanphx/benchmark-ips) gem by Evan Phoenix.
 
-**Python Port:** Igor Goncharov <igor@igorstechnoclub.com>
+**Python Port:** Igor <igor@igorstechnoclub.com>
 
 ## Description
 
