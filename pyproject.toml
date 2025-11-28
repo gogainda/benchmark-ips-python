@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "benchmark-ips"
 dynamic = ["version"]
 description = "Iterations per second benchmarking for Python"
-readme = "README_PYTHON.md"
+readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
@@ -35,10 +35,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/evanphx/benchmark-ips"
-Documentation = "https://github.com/evanphx/benchmark-ips"
-Repository = "https://github.com/evanphx/benchmark-ips"
-"Bug Tracker" = "https://github.com/evanphx/benchmark-ips/issues"
+Homepage = "https://github.com/gogainda/benchmark-ips-python"
+Documentation = "https://github.com/gogainda/benchmark-ips-python"
+Repository = "https://github.com/gogainda/benchmark-ips-python"
+"Bug Tracker" = "https://github.com/gogainda/benchmark-ips-python/issues"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

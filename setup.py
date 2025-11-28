@@ -24,11 +24,11 @@ setup(
     name='benchmark-ips',
     version=about.get('__version__', '2.14.0'),
     description='Iterations per second benchmarking for Python',
-    long_description=read_file('README_PYTHON.md') if os.path.exists('README_PYTHON.md') else '',
+    long_description=read_file('README.md') if os.path.exists('README.md') else '',
     long_description_content_type='text/markdown',
     author='Python port by Claude',
     author_email='',
-    url='https://github.com/evanphx/benchmark-ips',
+    url='https://github.com/gogainda/benchmark-ips-python',
     packages=find_packages(exclude=['tests', 'tests.*', 'examples']),
     install_requires=[
         # No external dependencies required
@@ -56,7 +56,7 @@ setup(
     ],
     keywords='benchmark benchmarking performance testing ips',
     project_urls={
-        'Bug Reports': 'https://github.com/evanphx/benchmark-ips/issues',
-        'Source': 'https://github.com/evanphx/benchmark-ips',
+        'Bug Reports': 'https://github.com/gogainda/benchmark-ips-python/issues',
+        'Source': 'https://github.com/gogainda/benchmark-ips-python',
     },
 )

@@ -11,7 +11,7 @@ from .report import Report
 from . import compare as compare_module
 
 
-__version__ = "2.14.0"
+__version__ = "2.14.1"
 __codename__ = "Akagi"
 
 
