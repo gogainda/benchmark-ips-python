@@ -16,15 +16,23 @@ An iterations per second enhancement for benchmarking. For short snippets of cod
 
 ## Installation
 
+Stable release (PyPI):
+
 ```bash
-pip install benchmark-ips
+python3 -m pip install benchmark-ips
 ```
 
-Or for development:
+Install from source (local checkout):
 
 ```bash
-pip install -e .
-pip install -r requirements-dev.txt
+python3 -m pip install -e .
+python3 -m pip install -r requirements-dev.txt  # tests/coverage
+```
+
+Install directly from GitHub:
+
+```bash
+python3 -m pip install git+https://github.com/evanphx/benchmark-ips.git
 ```
 
 ## Synopsis
